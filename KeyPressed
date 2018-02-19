@@ -1,0 +1,28 @@
+function setup() { 
+  createCanvas(400, 400);
+} 
+
+var diameter = 10;
+
+function draw() { 
+  if (keyIsPressed && mouseIsPressed) {
+    ellipse(mouseX, mouseY, diameter);
+  }
+}
+
+function keyPressed() {
+  print(key);
+  if (key == 'R') {
+		fill(255, 0, 0);
+		diameter = 40;
+  } else if (key == 'G') {
+    fill(0, 255, 0);
+		diameter = 30;
+  } else if (key == 'B') {
+    fill(0, 0, 255); 
+  }
+	  else if (key == '1') {
+	  fill(100,100,100);
+	}		
+}
+ 
